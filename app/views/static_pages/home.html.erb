@@ -1,15 +1,31 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<div class="center jumbotron" id="landpage_bg">
+  <h1>Welcome to the International FTAs Portal</h1>
 
   <h2>
     This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    International FTAs Portal
     sample application.
   </h2>
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
-<%= link_to image_tag("rails-logo.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
+<div class="container-fluid">
+  <h1>Visit our application to</h1>
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4" >
+      	<h2>Introduction about FTA & WTO introduction
+      	</h2>
+      	<%= image_tag("wtoicon.png",size: '256x256', class: "img-responsive")  %>
+    </div>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <h2>FTA documents</h2>
+      <%= image_tag("documents.png",size: '256x256', class:"img-responsive")%>
+    </div>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <h2>How to utilize FTA to reduce cost of shipping </h2>
+      <%= image_tag("money.png",size: '256x256', class: "img-responsive") %>
+    </div>
+  </div>
+</div>
             
