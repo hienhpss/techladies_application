@@ -14,17 +14,16 @@
   <h1>Visit our application to</h1>
   <div class="row">
     <div class="col-sm-3 col-md-6 col-lg-4" >
-      	<h2>Introduction about FTA & WTO introduction
-      	</h2>
-      	<%= image_tag("wtoicon.png",size: '256x256', class: "img-responsive")  %>
+      	<h2>Introduction about FTA & WTO introduction</h2>
+      	<%= link_to image_tag("wtoicon.png",size: '256x256', class: "img-responsive"),introduction_path  %>
     </div>
     <div class="col-sm-3 col-md-6 col-lg-4">
       <h2>FTA documents</h2>
-      <%= image_tag("documents.png",size: '256x256', class:"img-responsive")%>
+      <%= link_to image_tag("documents.png",size: '256x256', class:"img-responsive"), documents_path%>
     </div>
     <div class="col-sm-3 col-md-6 col-lg-4">
       <h2>How to utilize FTA to reduce cost of shipping </h2>
-      <%= image_tag("money.png",size: '256x256', class: "img-responsive") %>
+      <%= link_to image_tag("money.png",size: '256x256', class: "img-responsive"), utilize_path %>
     </div>
   </div>
 </div>
